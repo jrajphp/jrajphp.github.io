@@ -354,7 +354,8 @@ a:hover { color: var(--accent); }
 }
 .art-frame img,
 .entry-image img,
-.about-portrait img {
+.about-portrait img,
+.commission-sketch img {
   position: absolute;
   inset: 0;
   width: 100%;

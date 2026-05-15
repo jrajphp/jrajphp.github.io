@@ -1,14 +1,14 @@
 const ARTWORKS = [
-  { id: 1,  file: 'images/artworks/fineliner-trees-ship.jpg', title: 'Trees & Ship',        medium: 'Ink pen' },
+  { id: 1,  file: 'images/artworks/fineliner-trees-ship.jpg', title: 'Trees & Ship',        medium: 'Fineliner' },
   { id: 2,  file: 'images/artworks/watercolor-cake.jpg',      title: 'Sunday Slice',        medium: 'Watercolor' },
-  { id: 3,  file: 'images/artworks/fineliner-mountain1.jpg',  title: 'Mountain Sketch, I',  medium: 'Ink pen · hatching' },
+  { id: 3,  file: 'images/artworks/fineliner-mountain1.jpg',  title: 'Mountain Sketch, I',  medium: 'Fineliner · hatching' },
   { id: 4,  file: 'images/artworks/watercolor-cap.jpg',       title: 'Worn Cap',            medium: 'Watercolor' },
-  { id: 5,  file: 'images/artworks/fineliner-longtrees.jpg',  title: 'Tall Pines',          medium: 'Ink pen · pattern' },
-  { id: 6,  file: 'images/artworks/fountainpen-shoe.jpg',     title: 'Sole Study',          medium: 'Fountain pen' },
-  { id: 7,  file: 'images/artworks/watercolor_grey_ink.jpg',  title: 'Grey Wash',           medium: 'Watercolor & ink' },
-  { id: 8,  file: 'images/artworks/fineliner-mountain2.jpg',  title: 'Mountain Sketch, II', medium: 'Ink pen · hatching' },
-  { id: 9,  file: 'images/artworks/Fineliner-drawing.jpg',    title: 'Studio Marks',        medium: 'Ink pen' },
-  { id: 10, file: 'images/artworks/watercolor-shoe.jpg',      title: 'Walking Shoe',        medium: 'Watercolor' },
+  { id: 5,  file: 'images/artworks/fineliner-longtrees.jpg',  title: 'Tall Pines',          medium: 'Fineliner · pattern' },
+  { id: 6,  file: 'images/artworks/fountainpen-shoe.jpg',     title: 'Sole Study',          medium: 'Fountain Ink Pen' },
+  { id: 7,  file: 'images/artworks/watercolor_grey_ink.jpg',  title: 'Grey Wash',           medium: 'Ink Pen · Soluable ink' },
+  { id: 8,  file: 'images/artworks/fineliner-mountain2.jpg',  title: 'Mountain Sketch, II', medium: 'Fineliner · pattern' },
+  { id: 9,  file: 'images/artworks/Fineliner-drawing.jpg',    title: 'Studio Marks',        medium: 'Fineliner · pattern' },
+  { id: 10, file: 'images/artworks/watercolor-shoe.jpg',      title: 'Walking Shoe',        medium: 'Watercolor · Ink Pen' },
 ];
 
 function pad2(n) { return String(n).padStart(2, '0'); }
