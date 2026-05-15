@@ -1,0 +1,6 @@
+_design_archive/
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+node_modules/
