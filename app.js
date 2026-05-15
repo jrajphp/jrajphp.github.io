@@ -5,8 +5,8 @@ const ARTWORKS = [
   { id: 4,  file: 'images/artworks/watercolor-cap.jpg',       title: 'Worn Cap',            medium: 'Watercolor' },
   { id: 5,  file: 'images/artworks/fineliner-longtrees.jpg',  title: 'Tall Pines',          medium: 'Fineliner · pattern' },
   { id: 6,  file: 'images/artworks/fountainpen-shoe.jpg',     title: 'Sole Study',          medium: 'Fountain Ink Pen' },
-  { id: 7,  file: 'images/artworks/watercolor_grey_ink.jpg',  title: 'Grey Wash',           medium: 'Ink Pen · Soluable ink' },
-  { id: 8,  file: 'images/artworks/fineliner-mountain2.jpg',  title: 'Mountain Sketch, II', medium: 'Fineliner · pattern' },
+  { id: 7,  file: 'images/artworks/greyink-fountainpen.jpg',  title: 'Grey Wash',           medium: 'Ink Pen · Soluable ink' },
+  { id: 8,  file: 'images/artworks/pencil-drawing.jpg',       title: 'Sketchbook Studies',  medium: 'Polychromos & acrylic pencils' },
   { id: 9,  file: 'images/artworks/Fineliner-drawing.jpg',    title: 'Studio Marks',        medium: 'Fineliner · pattern' },
   { id: 10, file: 'images/artworks/watercolor-shoe.jpg',      title: 'Walking Shoe',        medium: 'Watercolor · Ink Pen' },
 ];
