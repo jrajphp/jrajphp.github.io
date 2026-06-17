@@ -1023,3 +1023,178 @@ a:hover { color: var(--accent); }
   color: var(--ink-mute);
   text-transform: uppercase;
 }
+
+/* ── Shop ────────────────────────────────────────── */
+.shop-how {
+  margin: 0 0 56px;
+  padding: 22px 26px;
+  border-left: 2px solid var(--accent);
+  background: var(--card);
+  color: var(--ink-soft);
+  font-size: 14.5px;
+  line-height: 1.7;
+  max-width: 760px;
+}
+.shop-how strong { color: var(--ink); font-weight: 500; }
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 44px 28px;
+  padding-bottom: 120px;
+}
+@media (max-width: 1080px) { .shop-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 760px)  { .shop-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 460px)  { .shop-grid { grid-template-columns: 1fr; } }
+
+.shop-card { display: flex; flex-direction: column; gap: 14px; }
+.shop-frame {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background-color: var(--frame);
+}
+.shop-frame img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .5s ease, filter .4s ease;
+}
+.shop-card:not(.sold):hover .shop-frame img { transform: scale(1.03); }
+.shop-card.sold .shop-frame img { filter: grayscale(1) opacity(0.4); }
+.sold-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--ink);
+  color: var(--bg);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+.shop-info { display: flex; flex-direction: column; gap: 6px; }
+.shop-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--ink);
+  margin: 0;
+  line-height: 1.2;
+}
+.shop-spec {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute);
+}
+.shop-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin-top: 6px;
+}
+.price-mrp {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  color: var(--ink-mute);
+  text-decoration: line-through;
+}
+.price-now {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-style: italic;
+  color: var(--accent);
+}
+.shop-off {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+.shop-enquire {
+  margin-top: 10px;
+  align-self: flex-start;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 3px;
+  transition: color .2s, border-color .2s;
+}
+.shop-enquire:hover { color: var(--accent); border-color: var(--accent); }
+.shop-sold-note {
+  margin-top: 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+/* ── Tools ───────────────────────────────────────── */
+.tools-section { padding-bottom: 90px; }
+.tools-lede {
+  font-family: var(--serif);
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 300;
+  line-height: 1.25;
+  color: var(--ink);
+  max-width: 760px;
+  margin: 0 0 56px;
+  text-wrap: pretty;
+}
+.tools-lede em { font-style: italic; color: var(--accent); }
+
+/* Full sketch sheet, shown as a mounted photo */
+.sheet-figure {
+  max-width: 620px;
+  margin: 0 auto 14px;
+  background: #fff;
+  border: 1px solid var(--frame);
+  padding: 12px;
+  box-shadow: 0 18px 40px -28px rgba(0,0,0,0.5);
+}
+.sheet-figure img { width: 100%; height: auto; display: block; }
+.sheet-cap {
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+  margin: 0 auto 40px;
+}
+
+/* Details listed under each sheet */
+.sheet-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 56px;
+}
+@media (max-width: 720px) { .sheet-list { grid-template-columns: 1fr; } }
+.sheet-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+.tool-name {
+  font-family: var(--serif);
+  font-size: 19px;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.tool-desc {
+  color: var(--ink-soft);
+  font-size: 14px;
+  line-height: 1.6;
+}
